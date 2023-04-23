@@ -5,7 +5,7 @@ def create_note(number):
     title = check_len_text_input(
         input('Название заметки: '), number)
     body = check_len_text_input(
-        input('Тема: '), number)
+        input('Текст заметки: '), number)
     return np.Note(title=title, body=body)
 
 
