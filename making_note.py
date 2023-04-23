@@ -3,9 +3,9 @@ import notepad as np
 
 def create_note(number):
     title = check_len_text_input(
-        input('Название заметки: '), number)
+        input('Тема: '), number)
     body = check_len_text_input(
-        input('Текст заметки: '), number)
+        input('Текст: '), number)
     return np.Note(title=title, body=body)
 
 
@@ -19,7 +19,7 @@ def menu():
 def check_len_text_input(text, n):
     while len(text) <= n:
         print(f'Текст должен превышать {n} символов\n')
-        text = input('Текст заметки: ')
+        text = input('Текст: ')
     else:
         return text
 
